@@ -1,0 +1,2 @@
+set tabsize 2
+set tabstospaces
