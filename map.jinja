@@ -1,0 +1,12 @@
+{% set wordpress = salt['grains.filter_by']({
+    'Debian': {
+        'user': 'www-data',
+        'group': 'www-data',
+        'docroot': '/var/www/html',
+    },
+    'RedHat': {
+        'user': 'apache',
+        'group': 'apache',
+        'docroot': '/var/www/html',
+    },
+})%}
