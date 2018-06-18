@@ -1,9 +1,9 @@
 wordpress:
   websites:
     mywebsite:
-      url: 192.168.50.11
-      name: WordPress Demo Site
+      url: 10.0.1.102
+      name: IdunnaSoft
       adminuser: admin
       adminpass: adpass
-      adminemail: test@example.cm
+      adminemail: marketing@idunnasoft.com
       rootdir: ''
