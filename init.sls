@@ -5,3 +5,11 @@ mysql_server_install:
     - name: {{ mysql.server }}
   service.running:
     - name: {{ mysql.service }}
+
+include:
+  - mysql.config
+  - mysql.python
+  - mysql.root
+  - mysql.databases
+  - mysql.users
+  - mysql.restart
