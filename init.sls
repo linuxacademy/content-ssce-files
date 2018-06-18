@@ -2,6 +2,8 @@
 
 include:
   - wordpress.wpcli
+  - wordpress.config
+  - wordpress.install
 
 docroot_permissions:
   file.directory:
@@ -15,7 +17,3 @@ download_wordpress:
     - name: 'wp core download --path="{{ wordpress.docroot }}"'
     - user: {{ wordpress.user }}
     - unless: test -f {{ wordpress.docroot }}/wp-config.php
-
-include:
-  - wordpress.config
-  - wordpress.install
