@@ -1,3 +1,4 @@
+# This file is managed by Salt; please do not change.
 #
 # These groups are read by MariaDB server.
 # Use it for options that only the server (but not clients) should see
@@ -10,6 +11,7 @@
 
 # this is only for the mysqld standalone daemon
 [mysqld]
+bind-address = {{ pillar['mysql']['server']['bind'] }}
 
 # this is only for embedded server
 [embedded]
