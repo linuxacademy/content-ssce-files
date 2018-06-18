@@ -5,5 +5,5 @@ wordpress:
       name: IdunnaSoft
       adminuser: admin
       adminpass: adpass
-      adminemail: test@idunnasoft.com
+      adminemail: marketing@idunnasoft.com
       rootdir: ''
