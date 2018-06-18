@@ -2,8 +2,8 @@
 
 include:
   - wordpress.wpcli
-  - wordpress.config
-  - wordpress.install
+  - wordpress.wpconfig
+  - wordpress.wpinstall
 
 docroot_permissions:
   file.directory:
