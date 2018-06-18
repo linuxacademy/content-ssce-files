@@ -15,3 +15,7 @@ download_wordpress:
     - name: 'wp core download --path="{{ wordpress.docroot }}"'
     - user: {{ wordpress.user }}
     - unless: test -f {{ wordpress.docroot }}/wp-config.php
+
+include:
+  - wordpress.config
+  - wordpress.install
