@@ -5,7 +5,7 @@
 {{ site }}_install_wordpress:
   cmd.run:
     - name: 'wp core install --url="{{ arg.url }}" --title="{{ arg.name }}" --admin_user="{{ arg.adminuser }}" --admin_password="{{ arg.adminpass }}" --admin_email="{{ arg.adminemail }}" --path="{{ wordpress.docroot }}/{{ arg.rootdir }}"'
-    - user: {{ wordpress.user }}
+    - runas: {{ wordpress.user }}
     - unless: wp core is-installed --path={{ wordpress.docroot }}
 
 {% endfor %}
