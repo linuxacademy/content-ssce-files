@@ -6,12 +6,11 @@ include:
 docroot_permissions:
   file.directory:
     - name: {{ wordpress.docroot }}
-    - runas: {{ wordpress.user }}
+    - user: {{ wordpress.user }}
     - group: {{wordpress.group }}
     - mode: 755
 
 download_wordpress:
   cmd.run:
-    - name: 'wp core download --path="{{ wordpress.docroot }}"'
-    - runas: {{ wordpress.user }}
+    - name: 'wp core download --path="{{ wordpress.docroot }}" --allow-root'
     - unless: test -f {{ wordpress.docroot }}/wp-config.php
