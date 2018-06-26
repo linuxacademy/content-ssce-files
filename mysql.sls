@@ -9,6 +9,6 @@ mysql:
   users:
     wpuser:
       password: temppass
-      host: 10.0.1.101
+      host: 10.0.1.102
       database: wordpress.*
       grants: ALL PRIVILEGES
