@@ -5,10 +5,10 @@ mysql:
     password: temp
   databases:
     wordpress:
-      host: 10.0.1.102
+      host: localhost
   users:
     wpuser:
       password: temppass
-      host: 10.0.1.102
+      host: localhost
       database: wordpress.*
       grants: ALL PRIVILEGES
