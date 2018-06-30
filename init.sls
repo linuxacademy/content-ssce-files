@@ -4,4 +4,3 @@ include:
   - mysql.root
   - mysql.databases
   - mysql.users
-  - mysql.restart
