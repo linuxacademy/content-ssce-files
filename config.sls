@@ -4,7 +4,7 @@
 # This command tells wp-cli to create our wp-config.php, DB info needs to be the same as above
 configure:
  cmd.run:
-  - name: '/usr/local/bin/wp core config --dbhost={{ site.dbhost }} --dbname={{ site.database }} --dbuser={{ site.dbuser }} --dbpass={{ site.dbpass }}'
+  - name: '/usr/local/bin/wp core config --dbhost={{ site.dbhost }} --dbname={{ site.database }} --dbuser={{ site.dbuser }} --dbpass={{ site.dbpass }} --allow-root'
   - cwd: {{ map.docroot }}/{{ name }}
   - user: {{ map.www_user }}
 
