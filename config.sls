@@ -6,4 +6,4 @@ server_config:
     - source: {{ mysql.serverconfigsource }}
     - template: jinja
     - require:
-- pkg: {{ mysql.server }}
+      - pkg: {{ mysql.server }}
