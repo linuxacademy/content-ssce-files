@@ -3,7 +3,7 @@ wordpress:
         source: https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
         hash:  https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar.sha512
     sites:
-        sitenameA.com:
+        idunnasoft.com:
             username: admin
             password: temppass
             database: wordpress
