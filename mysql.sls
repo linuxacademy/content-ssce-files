@@ -2,6 +2,7 @@ mysql:
   server:
     bind: 10.0.1.102
   root:
+    name: root
     password: temp
   databases:
     wordpress:
