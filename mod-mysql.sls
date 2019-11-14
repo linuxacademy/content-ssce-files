@@ -3,4 +3,4 @@ include:
 
 mod_mysql:
   pkg.installed:
-    - name: php-mysql
+    - name: php-mysqlnd
