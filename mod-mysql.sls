@@ -1,6 +1,6 @@
 include:
   - php
 
-mod_mbstring:
+mod_mysql:
   pkg.installed:
     - name: php-mysql
